@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Shell
+Kernel
+Aplicativos
+Git
+Github
