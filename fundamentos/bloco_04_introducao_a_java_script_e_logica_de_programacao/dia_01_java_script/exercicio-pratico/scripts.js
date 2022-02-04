@@ -100,6 +100,26 @@ if (nota < 0 || nota > 100) {
 }
 
 
+let numero = [1, 2, 3];
+let comandos = false;
+for (let index = 0; index <= number.length; index += 1) {
+    if (number[index] % 2 == 0) {
+        comandos = true;
+    }
+}
+console.log(comandos);
+
+
+let num = [1, 2, 3];
+let comando = false;
+for (let index = 0; index <= num.length; index += 1) {
+    if (number[index] % 2 == 1) {
+        comando = true;
+    }
+}
+console.log(comando);
+
+
 const custo = 5;
 const valor = 10;
 if (custo >= 0 && valor >= 0) {
