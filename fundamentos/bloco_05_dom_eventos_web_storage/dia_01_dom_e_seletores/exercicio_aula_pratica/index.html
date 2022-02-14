@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        
+        function text() {
+            let paragrafo = document.getElementsByTagName('p')[1];
+            paragrafo.innerText = "Trabalhando em uma multinacional e aprendendo sempre mais!"
+        }
+        text();
+
+        function color() {
+            let colorYellow = document.getElementsByClassName('main-content')[0];
+            colorYellow.style.backgroundColor = 'rbg(76,164,109)';            
+        }
+        color();
+
+        function color2() {
+            let colorRed = document.getElementsByClassName('center-content')[0];
+            colorRed.style.backgroundColor = 'white';
+        }
+        color2();
+
+        function text2() {
+            let tag1 = document.getElementsByTagName('h1')[0];
+            tag1.innerText = 'Exercício 5.1 - JavaScript';
+        }
+        text2();
+
+        function text3() {
+            let textMaisculo = document.getElementsByTagName('p')[0];
+            textMaisculo.innerText = 'TEXTO PADRÃO DO NOSSO SITE';
+        }
+        text3();
+
+        function tag(){
+            let tagParagrafo = document.getElementsByTagName('p');
+            for (index = 0; index < tagParagrafo.length; index +=1) {
+                console.log(tagParagrafo[index].innerHTML);       
+            }
+        }
+        tag(); 
+
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos.
+ Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ Crie uma função que mude a cor do quadrado vermelho para branco.
+ Crie uma função que corrija o texto da tag <h1>.
+ Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+    </script>
+  </body>
+</html>
